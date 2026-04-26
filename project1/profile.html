@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - EcoBudget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌱 EcoBudget</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="add-expense.html">➕ Add Expense</a></li>
+                <li><a href="reports.html">📈 Reports</a></li>
+                <li><a href="profile.html">👤 Profile</a></li>
+                <li><a href="login.html">🔐 Login</a></li>
+                <li><a href="register.html">📝 Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="welcome-section">
+                <h1>👤 Your Profile</h1>
+                <p>Manage your account settings and preferences. 🌟</p>
+            </div>
+
+            <div class="dashboard">
+                <div class="card">
+                    <h3 data-icon="👤">Personal Information</h3>
+                    <p><strong>Name:</strong> John Doe</p>
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>Member Since:</strong> January 2024</p>
+                </div>
+                <div class="card">
+                    <h3 data-icon="🎯">Goals</h3>
+                    <p><strong>Monthly Budget:</strong> $2,000</p>
+                    <p><strong>Sustainability Target:</strong> 90/100</p>
+                    <p><strong>Current Progress:</strong> 85%</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 data-icon="🏆">Achievements</h3>
+                    <ul>
+                        <li>🌱 Eco Warrior - Saved 500kg CO2</li>
+                        <li>💰 Budget Master - Stayed under budget 3 months</li>
+                        <li>🚲 Green Commuter - Used public transport 20 times</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 data-icon="⚙️">Settings</h3>
+                    <p><strong>Notifications:</strong> Enabled</p>
+                    <p><strong>Theme:</strong> Green</p>
+                    <p><strong>Language:</strong> English</p>
+                    <button class="btn" style="margin-top: 1rem;">✏️ Edit Settings</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EcoBudget. Made with 💚 for a sustainable future.</p>
+            <div class="footer-links">
+                <a href="about.html">ℹ️ About</a> |
+                <a href="contact.html">📞 Contact</a> |
+                <a href="#">🔒 Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple hamburger menu toggle (for mobile)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

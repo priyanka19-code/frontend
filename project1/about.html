@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - EcoBudget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌱 EcoBudget</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="add-expense.html">➕ Add Expense</a></li>
+                <li><a href="reports.html">📈 Reports</a></li>
+                <li><a href="profile.html">👤 Profile</a></li>
+                <li><a href="login.html">🔐 Login</a></li>
+                <li><a href="register.html">📝 Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="welcome-section">
+                <h1>ℹ️ About EcoBudget</h1>
+                <p>Learn more about our mission to make budgeting sustainable. 🌍</p>
+            </div>
+
+            <img src="https://source.unsplash.com/random?eco,team" alt="Eco-friendly team" class="hero-image">
+
+            <div class="dashboard">
+                <div class="card">
+                    <h3 data-icon="🎯">Our Mission</h3>
+                    <p>EcoBudget helps you track expenses while promoting sustainable living. We believe that conscious spending can make a positive impact on our planet. 🌱</p>
+                </div>
+                <div class="card">
+                    <h3 data-icon="🚀">Features</h3>
+                    <ul>
+                        <li>💰 Expense tracking</li>
+                        <li>🌱 Sustainability scoring</li>
+                        <li>📊 Detailed reports</li>
+                        <li>🎯 Goal setting</li>
+                        <li>🏆 Achievement system</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 data-icon="👥">Our Team</h3>
+                    <p>Dedicated developers and designers passionate about sustainability and financial wellness. 💚</p>
+                </div>
+                <div class="card">
+                    <h3 data-icon="📈">Impact</h3>
+                    <p>Help users save money and reduce their carbon footprint through smart budgeting choices. 🌿</p>
+                </div>
+            </div>
+
+            <div class="eco-tips">
+                <h3>🌟 Join the Movement</h3>
+                <p>Start your sustainable budgeting journey today! Every small change counts towards a greener future. ♻️</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EcoBudget. Made with 💚 for a sustainable future.</p>
+            <div class="footer-links">
+                <a href="about.html">ℹ️ About</a> |
+                <a href="contact.html">📞 Contact</a> |
+                <a href="#">🔒 Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple hamburger menu toggle (for mobile)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

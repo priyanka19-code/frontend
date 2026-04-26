@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EcoBudget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌱 EcoBudget</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="add-expense.html">➕ Add Expense</a></li>
+                <li><a href="reports.html">📈 Reports</a></li>
+                <li><a href="profile.html">👤 Profile</a></li>
+                <li><a href="login.html">🔐 Login</a></li>
+                <li><a href="register.html">📝 Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="welcome-section">
+                <h1>📊 EcoBudget Dashboard</h1>
+                <p>Monitor your expenses and sustainability progress. 🌍💚</p>
+            </div>
+            <img src="https://source.unsplash.com/random?eco,nature" alt="Eco-friendly image" class="hero-image">
+
+            <div class="dashboard">
+                <div class="card">
+                    <h3 data-icon="💰">Total Expenses</h3>
+                    <p>$1,250.00</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 62.5%; background-color: #FF9800;"></div>
+                    </div>
+                    <small>62.5% of $2,000 budget used</small>
+                </div>
+                <div class="card">
+                    <h3 data-icon="🌱">Sustainability Score</h3>
+                    <p class="sustainability-score">85/100</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                    <small>Excellent! Keep up the good work! 🌟</small>
+                </div>
+                <div class="card">
+                    <h3 data-icon="📈">Monthly Budget</h3>
+                    <p>$2,000.00</p>
+                    <p style="color: #FF9800; font-size: 0.9rem;">Remaining: $750.00</p>
+                </div>
+                <div class="card">
+                    <h3 data-icon="🛒">Recent Expenses</h3>
+                    <ul class="expense-list">
+                        <li class="expense-item">
+                            <span>🛒 Groceries</span>
+                            <span>$150.00</span>
+                        </li>
+                        <li class="expense-item">
+                            <span>🚗 Transportation</span>
+                            <span>$75.00</span>
+                        </li>
+                        <li class="expense-item">
+                            <span>💡 Utilities</span>
+                            <span>$200.00</span>
+                        </li>
+                        <li class="expense-item">
+                            <span>🎬 Entertainment</span>
+                            <span>$50.00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="chart-container">
+                <h3 style="color: #388E3C; margin-bottom: 1rem;">📊 Expense Breakdown by Category</h3>
+                <div class="bar-chart">
+                    <div class="bar" style="height: 80%;" data-label="Groceries">
+                        <span class="bar-label">$450</span>
+                        <span class="bar-value">36%</span>
+                    </div>
+                    <div class="bar" style="height: 60%;" data-label="Transportation">
+                        <span class="bar-label">$300</span>
+                        <span class="bar-value">24%</span>
+                    </div>
+                    <div class="bar" style="height: 50%;" data-label="Utilities">
+                        <span class="bar-label">$250</span>
+                        <span class="bar-value">20%</span>
+                    </div>
+                    <div class="bar" style="height: 30%;" data-label="Entertainment">
+                        <span class="bar-label">$150</span>
+                        <span class="bar-value">12%</span>
+                    </div>
+                    <div class="bar" style="height: 20%;" data-label="Other">
+                        <span class="bar-label">$100</span>
+                        <span class="bar-value">8%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard">
+                <div class="card">
+                    <h3 data-icon="📈">Sustainability Trend</h3>
+                    <div class="line-chart">
+                        <div class="line-points">
+                            <div class="line-point" style="left: 0%; bottom: 20%;" data-value="78"></div>
+                            <div class="line-point" style="left: 25%; bottom: 40%;" data-value="80"></div>
+                            <div class="line-point" style="left: 50%; bottom: 60%;" data-value="82"></div>
+                            <div class="line-point" style="left: 75%; bottom: 85%;" data-value="85"></div>
+                        </div>
+                    </div>
+                    <small>Last 4 months trend</small>
+                </div>
+                <div class="card">
+                    <h3 data-icon="🥧">Expense Distribution</h3>
+                    <div class="pie-chart">
+                        <div class="pie-center">Total<br>$1,250</div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #4CAF50;"></div>
+                            <span>Groceries (36%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #81C784;"></div>
+                            <span>Transportation (24%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #A5D6A7;"></div>
+                            <span>Utilities (20%)</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #C8E6C9;"></div>
+                            <span>Entertainment (12%)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 data-icon="🎯">Goals Progress</h3>
+                    <div style="margin-bottom: 1rem;">
+                        <strong>Monthly Budget:</strong>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 62.5%; background-color: #FF9800;"></div>
+                        </div>
+                        <small>$1,250 / $2,000 (62.5%)</small>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <strong>Eco Score Target:</strong>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%;"></div>
+                        </div>
+                        <small>85 / 100 (85% to goal)</small>
+                    </div>
+                    <div>
+                        <strong>Savings Goal:</strong>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%; background-color: #2196F3;"></div>
+                        </div>
+                        <small>$750 / $1,000 (75%)</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 data-icon="💡">Quick Actions</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="add-expense.html" class="btn" style="font-size: 0.9rem; padding: 0.5rem;">➕ Add Expense</a>
+                        <a href="reports.html" class="btn-secondary" style="font-size: 0.9rem; padding: 0.5rem;">📈 View Reports</a>
+                        <a href="profile.html" class="btn-secondary" style="font-size: 0.9rem; padding: 0.5rem;">👤 Update Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eco-tips">
+                <h3>Eco Tips</h3>
+                <p>🌿 Reduce your carbon footprint by choosing public transport over driving. 🚲 Your sustainability score improves with eco-friendly choices! ♻️</p>
+                <img src="https://source.unsplash.com/random?eco,tips" alt="Eco tips image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-top: 1rem;">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EcoBudget. Made with 💚 for a sustainable future.</p>
+            <div class="footer-links">
+                <a href="about.html">ℹ️ About</a> |
+                <a href="contact.html">📞 Contact</a> |
+                <a href="#">🔒 Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple hamburger menu toggle (for mobile)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

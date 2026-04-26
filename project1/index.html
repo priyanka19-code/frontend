@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBudget - Smart Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌱 EcoBudget</a>
+            <ul class="nav-menu">
+                <li><a href="#home">🏠 Home</a></li>
+                <li><a href="#features">✨ Features</a></li>
+                <li><a href="#about">ℹ️ About</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="login.html">🔐 Login</a></li>
+                <li><a href="register.html">📝 Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>🌍 Track Expenses, Save the Planet</h1>
+                    <p>Smart expense tracking with sustainability scoring. Make every dollar count for a greener future! 💚</p>
+                    <div class="hero-buttons">
+                        <a href="register.html" class="btn">🚀 Get Started Free</a>
+                        <a href="#features" class="btn-secondary">📖 Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://source.unsplash.com/random?eco,money" alt="Eco-friendly budgeting" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2>✨ Why Choose EcoBudget?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">💰</div>
+                        <h3>Smart Expense Tracking</h3>
+                        <p>Categorize and monitor your spending with ease. Get insights into your financial habits.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌱</div>
+                        <h3>Sustainability Scoring</h3>
+                        <p>Track your eco-impact with every purchase. See how your choices affect the planet.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Detailed Reports</h3>
+                        <p>Visualize your spending patterns and progress towards financial and eco goals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Goal Setting</h3>
+                        <p>Set budgets and sustainability targets. Achieve your financial and environmental goals.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Achievements</h3>
+                        <p>Earn badges for eco-friendly choices and consistent budgeting habits.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive Design</h3>
+                        <p>Access your budget anywhere, anytime with our mobile-friendly interface.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <h2>📈 EcoBudget by Numbers</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Happy Users</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">$5M+</div>
+                        <div class="stat-label">Money Saved</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50,000</div>
+                        <div class="stat-label">Trees Planted</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">User Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>🌱 Ready to Start Your Eco-Friendly Journey?</h2>
+                <p>Join thousands of users who are making a difference, one expense at a time.</p>
+                <a href="register.html" class="btn">📝 Sign Up Now</a>
+            </div>
+        </section>
+
+        <!-- About Preview -->
+        <section id="about" class="about-preview">
+            <div class="container">
+                <div class="about-content">
+                    <h2>ℹ️ About EcoBudget</h2>
+                    <p>EcoBudget was created with a simple mission: to help people manage their finances while making environmentally conscious decisions. We believe that small changes in spending habits can create big impacts for our planet.</p>
+                    <a href="about.html" class="btn-secondary">🔍 Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://source.unsplash.com/random?eco,team" alt="EcoBudget team" class="hero-img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EcoBudget. Made with 💚 for a sustainable future.</p>
+            <div class="footer-links">
+                <a href="about.html">ℹ️ About</a> |
+                <a href="contact.html">📞 Contact</a> |
+                <a href="#">🔒 Privacy</a> |
+                <a href="#">📜 Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple hamburger menu toggle (for mobile)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

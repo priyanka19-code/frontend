@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - EcoBudget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌱 EcoBudget</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="add-expense.html">➕ Add Expense</a></li>
+                <li><a href="reports.html">📈 Reports</a></li>
+                <li><a href="profile.html">👤 Profile</a></li>
+                <li><a href="login.html">🔐 Login</a></li>
+                <li><a href="register.html">📝 Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="welcome-section">
+                <h1>📞 Contact Us</h1>
+                <p>Get in touch with the EcoBudget team. We're here to help! 💬</p>
+            </div>
+
+            <div class="form-container">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">👤 Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">📧 Your Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">📝 Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">💬 Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">📤 Send Message</button>
+                </form>
+            </div>
+
+            <div class="dashboard">
+                <div class="card">
+                    <h3 data-icon="📧">Email</h3>
+                    <p>support@ecobudget.com</p>
+                    <p>We respond within 24 hours! ⏰</p>
+                </div>
+                <div class="card">
+                    <h3 data-icon="📞">Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                    <p>Mon-Fri, 9AM-5PM EST 🕒</p>
+                </div>
+                <div class="card">
+                    <h3 data-icon="📍">Address</h3>
+                    <p>123 Green Street<br>Eco City, EC 12345</p>
+                    <p>Visit us for a chat! 🏢</p>
+                </div>
+                <div class="card">
+                    <h3 data-icon="💬">Social Media</h3>
+                    <p>Follow us for tips and updates!</p>
+                    <p>🐦 @EcoBudget<br>📘 fb.com/EcoBudget</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EcoBudget. Made with 💚 for a sustainable future.</p>
+            <div class="footer-links">
+                <a href="about.html">ℹ️ About</a> |
+                <a href="contact.html">📞 Contact</a> |
+                <a href="#">🔒 Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple hamburger menu toggle (for mobile)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

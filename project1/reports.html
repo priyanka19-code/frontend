@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports - EcoBudget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">🌱 EcoBudget</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="add-expense.html">➕ Add Expense</a></li>
+                <li><a href="reports.html">📈 Reports</a></li>
+                <li><a href="profile.html">👤 Profile</a></li>
+                <li><a href="login.html">🔐 Login</a></li>
+                <li><a href="register.html">📝 Register</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="welcome-section">
+                <h1>📈 Your Reports</h1>
+                <p>Analyze your spending patterns and sustainability progress. 📊</p>
+            </div>
+
+            <div class="dashboard">
+                <div class="card">
+                    <h3 data-icon="📊">Monthly Spending</h3>
+                    <p><strong>Total:</strong> $1,250.00</p>
+                    <p><strong>Budget:</strong> $2,000.00</p>
+                    <p><strong>Remaining:</strong> $750.00</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 62.5%; background-color: #4CAF50;"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 data-icon="🌱">Sustainability Trend</h3>
+                    <p><strong>Current Score:</strong> 85/100</p>
+                    <p><strong>Last Month:</strong> 78/100</p>
+                    <p><strong>Improvement:</strong> +7 points 📈</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 data-icon="📂">Top Categories</h3>
+                    <ul class="expense-list">
+                        <li class="expense-item">
+                            <span>🛒 Groceries</span>
+                            <span>$450.00 (36%)</span>
+                        </li>
+                        <li class="expense-item">
+                            <span>🚗 Transportation</span>
+                            <span>$300.00 (24%)</span>
+                        </li>
+                        <li class="expense-item">
+                            <span>💡 Utilities</span>
+                            <span>$250.00 (20%)</span>
+                        </li>
+                        <li class="expense-item">
+                            <span>🎬 Entertainment</span>
+                            <span>$150.00 (12%)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 data-icon="🎯">Goals Progress</h3>
+                    <p><strong>Monthly Budget:</strong> 62.5% used</p>
+                    <p><strong>Eco Score Target:</strong> 90/100</p>
+                    <p><strong>Current:</strong> 85/100 (94% to goal)</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 94%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eco-tips">
+                <h3>📋 Report Insights</h3>
+                <p>🌟 You're doing great! Your sustainability score improved by 7 points this month. Keep choosing eco-friendly options to reach your 90/100 target! 🏆</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 EcoBudget. Made with 💚 for a sustainable future.</p>
+            <div class="footer-links">
+                <a href="about.html">ℹ️ About</a> |
+                <a href="contact.html">📞 Contact</a> |
+                <a href="#">🔒 Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple hamburger menu toggle (for mobile)
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
